@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="error"></p>
+
+    <script>
+        var x=70;
+        var y=90;
+
+        document.getElementById("one").innerHTML=x+y;
+        document.getElementById("two").innerHTML=String(x)+","+String(y);
+
+        try{
+            addalert("welcome");
+        }
+        catch(err){
+            document.getElementById("error").innerHTML=err.message;
+
+        }
+
+
+</script>
+</body>
+</html>
